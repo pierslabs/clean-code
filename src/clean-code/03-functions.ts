@@ -94,8 +94,6 @@
   };
 
   const getPayAmountRefactor = ({ isDead = false, isSeparated = true, isRetired = false }): number => {
-    let result: number;
-
     if (isDead) return 1500;
 
     if (isSeparated) return 2500;
