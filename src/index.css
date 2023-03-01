@@ -4,3 +4,27 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 }
+
+h1 {
+  font-size: 40;
+  font-weight: normal;
+  border-bottom: 1px solid green;
+  text-align: center;
+  padding: 10;
+}
+
+.container {
+  border: solid green 1px;
+  width: 40vw;
+  margin: auto;
+  margin-top: 10vh;
+  animation: blur 2s ease-in infinite;
+  color: #4db835;
+  font-weight: normal;
+}
+
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 20px #02d509, 0px 0px 55px #027f85;
+  }
+}
