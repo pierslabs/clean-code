@@ -1,3 +1,12 @@
+/**
+ * Simplicidad
+ * Tamaño reducido
+ * Funciones de una sola linea sin causr complejidad
+ * Menos de 15 20 lineas
+ * Evitar else
+ * Priorizar ternarios
+ */
+
 (() => {
   // función para obtener información de una película por Id
   function getAllMovies(movieId: string) {
@@ -64,4 +73,33 @@
     console.log('Crear actor', birthdate);
     return true;
   }
+
+  const getPayAmount = ({ isDead = false, isSeparated = true, isRetired = false }) => {
+    let result;
+    if (isDead) {
+      result = 1500;
+    } else {
+      if (isSeparated) {
+        result = 2500;
+      } else {
+        if (isRetired) {
+          result = 3000;
+        } else {
+          result = 4000;
+        }
+      }
+    }
+
+    return result;
+  };
+
+  const getPayAmountRefactor = ({ isDead = false, isSeparated = true, isRetired = false }): number => {
+    let result: number;
+
+    if (isDead) return 1500;
+
+    if (isSeparated) return 2500;
+
+    return isRetired ? 3000 : 4000;
+  };
 })();
