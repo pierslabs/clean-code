@@ -1,3 +1,5 @@
+import '../src/clean-code/05-dry';
+
 function App() {
   return (
     <div className="App">
