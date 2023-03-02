@@ -1,4 +1,4 @@
-import '../src/clean-code/05-dry';
+// example:  import '../src/clean-code/05-dry';
 
 function App() {
   return (
